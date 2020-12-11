@@ -1,0 +1,5 @@
+export const ACTION_START = 'ACTION_START';
+export const ACTION_SUCCESS = 'ACTION_SUCCESS';
+export const ACTION_FAILURE = 'ACTION_FAILURE';
+
+export const CLEAR_ACTION = 'CLEAR_ACTION';
