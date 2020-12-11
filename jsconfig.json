@@ -3,5 +3,6 @@
     "module": "commonjs",
     "baseUrl": "src"
   },
-  "include": ["src", "jsconfig.json"]
+  "include": ["src", "jsconfig.json"],
+  "exclude": ["node_modules", "**/node_modules/*"]
 }
