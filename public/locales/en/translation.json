@@ -1,0 +1,13 @@
+{
+  "ADMIN PAGES START HERRE": { "!!!": "!!!!" },
+  "alerts": {
+    "language": {
+      "title": "Language Changed.",
+      "message": "Hey looks like you switch to ."
+    },
+    "department": {
+      "message": "You don’t have any departments yet.",
+      "title": "Click on “Create Department” button to get started."
+    }
+  }
+}

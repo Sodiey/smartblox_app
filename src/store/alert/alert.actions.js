@@ -1,7 +1,10 @@
-export const openAlert = (message, severity) => ({
-  type: 'OPEN_ALERT',
-  payload: { message, severity },
+import * as AlertTypes from './alert.types';
+
+export const openAlert = (payload) => ({
+  type: AlertTypes.OPEN_ALERT,
+  payload: payload,
 });
 export const closeAlert = () => ({
-  type: 'CLOSE_ALERT',
+  type: AlertTypes.CLOSE_ALERT,
 });
+

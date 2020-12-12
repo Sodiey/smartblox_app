@@ -1,0 +1,13 @@
+{
+  "ADMIN PAGES START HERRE": { "!!!": "!!!!" },
+  "alerts": {
+    "language": {
+      "title": "Taal gewijzigd",
+      "message": "Hey lijkt erop dat je overschakelt naar "
+    },
+    "department": {
+      "message": "U heeft nog geen afdelingen.",
+      "instruction": "Klik op de knop “Afdeling maken” om te beginnen."
+    }
+  }
+}

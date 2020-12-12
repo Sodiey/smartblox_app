@@ -1,14 +1,31 @@
 import React from 'react';
 import './app.scss';
-import { Button } from 'carbon-components-react';
-const App = () => {
+import CustomHeader from 'components/Header';
+import Landing from 'components/Landing';
+import Toast from 'components/Toast/Toast';
+
+// import { openAlert } from 'store/alert/alert.actions';
+
+import { connect } from 'react-redux';
+
+const App = ({ alert: { openAlert } }) => {
   return (
     <div>
-      Hello Carbon! Well, not quite yet. This is the starting point for the
-      Carbon tutorial.
-      <Button>Button</Button>
+      <CustomHeader />
+      {openAlert && <Toast />}
+      <div className="toolbarMargin" />
+      <Landing />
     </div>
   );
 };
 
-export default App;
+const mapStateToProps = (state) => ({
+  alert: state.alert,
+});
+
+// const mapDispatchToProps = (dispatch) => ({
+//   onSigninStart: (formData, history) =>
+//     dispatch(signinStart(formData, history)),
+// });
+
+export default connect(mapStateToProps, null)(App);

@@ -1,7 +1,7 @@
 import { takeLatest, call, put, all, select } from 'redux-saga/effects';
 
-import * as deptAction from '../department/department.actions';
-import * as DepartmentType from '../department/department.types';
+import * as deptAction from './department.actions';
+import * as DepartmentType from './department.types';
 
 const getDepartmentState = (state) => state.department;
 

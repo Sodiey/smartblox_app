@@ -1,21 +1,22 @@
+import * as AlertTypes from './alert.types';
+
 const INITIAL_STATE = {
   openAlert: false,
-  message: 'Something went wrong!',
-  severity: 'error',
+  type: null,
+  severity: null,
 };
 
 const alertReducer = (state = INITIAL_STATE, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case 'OPEN_ALERT':
+    case AlertTypes.OPEN_ALERT:
       return {
         openAlert: true,
-        message: payload.message,
-        severity: payload.severity,
+        ...payload,
       };
-    case 'CLOSE_ALERT':
-      return { ...state, openAlert: false };
+    case AlertTypes.CLOSE_ALERT:
+      return INITIAL_STATE;
     default:
       return state;
   }
